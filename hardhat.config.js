@@ -4,4 +4,11 @@ require("@nomicfoundation/hardhat-toolbox");
 module.exports = {
   solidity: "0.8.24",
   defaultNetwork: "localhost",
+  networks: {
+    sepolia: {
+      chainId: 11155111,
+      url: "",
+      accounts: [""],
+    },
+  },
 };
